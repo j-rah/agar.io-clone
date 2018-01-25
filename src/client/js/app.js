@@ -7,7 +7,7 @@ var playerNameInput = document.getElementById('playerNameInput');
 var socket;
 var reason;
 //myVars
-var house = document.getElementById('house');
+//var house = document.getElementById('house');
 
 var debug = function(args) {
     if (console && console.log) {
@@ -321,12 +321,12 @@ function drawFood(food) {
     graph.strokeStyle = 'hsl(' + food.hue + ', 100%, 45%)';
     graph.fillStyle = 'hsl(' + food.hue + ', 100%, 50%)';
     graph.lineWidth = foodConfig.border;
-    /*drawCircle(food.x - player.x + global.screenWidth / 2,
+    drawCircle(food.x - player.x + global.screenWidth / 2,
                food.y - player.y + global.screenHeight / 2,
-               food.radius, global.foodSides);*/
-    drawImage(house, food.x - player.x + global.screenWidth / 2,
-               food.y - player.y + global.screenHeight / 2,
-               food.radius, food.radius);
+               food.radius, global.foodSides);
+    //drawImage(house, food.x - player.x + global.screenWidth / 2,
+      //         food.y - player.y + global.screenHeight / 2,
+        //       food.radius, food.radius);
     //alert("lol");
 }
 
