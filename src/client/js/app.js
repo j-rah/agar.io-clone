@@ -327,6 +327,7 @@ function drawFood(food) {
     drawImage(house, food.x - player.x + global.screenWidth / 2,
                food.y - player.y + global.screenHeight / 2,
                food.radius, food.radius);
+    alert("lol");
 }
 
 function drawVirus(virus) {
